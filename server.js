@@ -6,13 +6,7 @@ var http = require('http');
 var app = express();
 var server = http.createServer(app);
 
-// const server = http.createServer((req, res) => {
-//     res.statusCode = 200;
-//     res.setHeader('Content-Type', 'text/html');
-//     res.end('<h1>Hello World</h1>');
-// });
-
-// var io = require('socket.io').listen(server);
+var io = require('socket.io').listen(server);
 
 app.use(express.static(__dirname));
 // app.use(bodyParser.json());
