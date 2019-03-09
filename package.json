@@ -6,6 +6,11 @@
   "scripts": {
     "start": "node server.js"
   },
+  "dependencies": {
+    "express": "4.16.4",
+    "body-parser": "1.18.3",
+    "socket.io": "2.2.0"
+  },
   "repository": {
     "type": "git",
     "url": ""
