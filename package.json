@@ -2,10 +2,13 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "Sample project to create a chat application",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "author": "Brenda Mudryk",
   "license": "ISC"
