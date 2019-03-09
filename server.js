@@ -1,21 +1,17 @@
-const http = require('http');
+
 const port=process.env.PORT || 3000
-const server = http.createServer((req, res) => {
-res.statusCode = 200;
-res.setHeader('Content-Type', 'text/html');
-res.end('<h1>Hello World</h1>');
-});
-server.listen(port,() => {
-console.log(`Server running at port `+port);
-});
-
-
-// const port=process.env.PORT || 3000
 // var express = require('express');
 // var bodyParser = require('body-parser')
-// var http = require('http');
+var http = require('http');
 // var app = express();
 // var server = http.createServer(app);
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    res.end('<h1>Hello World</h1>');
+});
+
 // var io = require('socket.io').listen(server);
 
 // app.use(express.static(__dirname));
@@ -41,6 +37,6 @@ console.log(`Server running at port `+port);
 //     console.log('A person has connected')
 // })
 
-// server.listen(port, () => {
-//     console.log('Server is running on port:  ', server.address().port);
-// });
+server.listen(port, () => {
+    console.log('Server is running on port:  ', server.address().port);
+});
