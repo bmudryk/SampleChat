@@ -1,20 +1,20 @@
 
 const port=process.env.PORT || 3000
-// var express = require('express');
+var express = require('express');
 // var bodyParser = require('body-parser')
 var http = require('http');
-// var app = express();
-// var server = http.createServer(app);
+var app = express();
+var server = http.createServer(app);
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end('<h1>Hello World</h1>');
-});
+// const server = http.createServer((req, res) => {
+//     res.statusCode = 200;
+//     res.setHeader('Content-Type', 'text/html');
+//     res.end('<h1>Hello World</h1>');
+// });
 
 // var io = require('socket.io').listen(server);
 
-// app.use(express.static(__dirname));
+app.use(express.static(__dirname));
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: false }))
 
