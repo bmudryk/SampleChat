@@ -3,6 +3,7 @@ var bodyParser = require('body-parser')
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+const port=process.env.PORT || 3000
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
@@ -27,6 +28,6 @@ io.on('connection', () => {
     console.log('A person has connected')
 })
 
-var server = http.listen(3000, () => {
+var server = http.listen(port, () => {
     console.log('Server is running on port:  ', server.address().port);
 });
