@@ -2,9 +2,9 @@
   "name": "chat",
   "version": "1.0.0",
   "description": "Sample project to create a chat application",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
