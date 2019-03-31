@@ -1,18 +1,18 @@
-# Time to Chat?
+# SampleChat
 A simple NodeJs chat application to help teach students some basic programming concepts.
 
 Students will learn:
-    * Coding environment and setup
-    * How to leverage code written by others
-    * Client-side vs Server-side code
-    * Website styling - HTML, CSS, Javascript
+* Coding environment and setup
+* How to leverage code written by others
+* Client-side vs Server-side code
+* Website styling - HTML, CSS, Javascript
 
 Enhancement Ideas:
-    * Broadcast when someone joins or leaves the chat
-    * Remember session chat information
-    * Create a login/password
-    * Multiple chat rooms
-    * Fancy CSS and animations
+* Broadcast when someone joins or leaves the chat
+* Remember session chat information
+* Create a login/password
+* Multiple chat rooms
+* Fancy CSS and animations
 
 ## Getting Started
 
