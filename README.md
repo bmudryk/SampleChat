@@ -7,13 +7,6 @@ Students will learn:
 * Client-side vs Server-side code
 * Website styling - HTML, CSS, Javascript
 
-Enhancement Ideas:
-* Broadcast when someone joins or leaves the chat
-* Remember session chat information
-* Create a login/password
-* Multiple chat rooms
-* Fancy CSS and animations
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -47,6 +40,13 @@ End with an example of getting some data out of the system or using it for a lit
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
+
+## Enhancement Ideas:
+* Broadcast when someone joins or leaves the chat
+* Remember session chat information
+* Create a login/password
+* Multiple chat rooms
+* Fancy CSS and animations
 
 ## Authors
 
