@@ -13,6 +13,8 @@
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
         crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js"></script>
 </head>
 
 <body>
@@ -31,25 +33,6 @@
 
         </div>
     </div>
-    <script>
-        var socket = io();
-        $(() => {
-            $("#send").click(() => {
-                sendMessage({ name: $("#name").val(), message: $("#message").val() });
-            })
-        })
-
-        socket.on('message', addMessages)
-
-        function addMessages(message) {
-            $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
-        }
-
-        function sendMessage(message) {
-            // $.post('https://samplechatfsa.azurewebsites.net/messages', message)
-            $.post('http://localhost:3000/messages', message)
-        }
-    </script>
 </body>
 
 </html>

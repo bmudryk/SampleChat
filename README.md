@@ -7,6 +7,7 @@ Students will learn:
 * Client-side vs Server-side code
 * Website styling - HTML, CSS, Javascript
 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -37,9 +38,11 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
+
 
 ## Enhancement Ideas:
 * Broadcast when someone joins or leaves the chat
@@ -48,9 +51,11 @@ Add additional notes about how to deploy this on a live system
 * Multiple chat rooms
 * Fancy CSS and animations
 
+
 ## Authors
 
 * **Brenda Mudryk** - *Initial work*
+
 
 ## Acknowledgments
 
