@@ -1,14 +1,16 @@
 "use strict"
 
 const port=process.env.PORT || 3000
+
 var express = require('express');
 var bodyParser = require('body-parser')
 var http = require('http');
+var io = require('socket.io');
+
 var app = express();
 var server = http.createServer(app);
 
-var io = require('socket.io').listen(server);
-
+io.listen(server);
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
