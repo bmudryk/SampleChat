@@ -1,19 +1,33 @@
 "use strict"
 
-const port=process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
-var express = require('express');
 var bodyParser = require('body-parser')
-var http = require('http');
-var io = require('socket.io');
+var app = require('express')();
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
 
-var app = express();
-var server = http.createServer(app);
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/chat.css', function (req, res) {
+    res.sendFile(__dirname + '/chat.css');
+});
+
+app.get('/favicon.ico', function (req, res) {
+    res.sendFile(__dirname + '/favicon.ico');
+});
+
+app.get('/chat.js', function (req, res) {
+    res.sendFile(__dirname + '/chat.js');
+});
 
 io.listen(server);
-app.use(express.static(__dirname));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }))
+
+
 
 app.post('/messages', (req, res) => {
     try {
@@ -30,7 +44,7 @@ app.post('/messages', (req, res) => {
 
 })
 
-io.on('connection', () => {
+io.on('connection', (socket) => {
     console.log('A person has connected')
 })
 

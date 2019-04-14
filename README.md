@@ -3,9 +3,10 @@ A simple NodeJs chat application to help teach students some basic programming c
 
 Students will learn:
 * Coding environment and setup
-* How to leverage code written by others
 * Client-side vs Server-side code
 * Website styling - HTML, CSS, Javascript
+* Code hosting and deployment
+* Improvements
 
 
 ## Getting Started

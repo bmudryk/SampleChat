@@ -2,7 +2,30 @@ var socket = io();
 $(() => {
     $("#send").click(() => {
         sendMessage({ name: $("#name").val(), message: $("#message").val() });
+        $("#message").val("");
     })
+
+    $("#message").prop("disabled", true);
+    $("#save").click(() => {
+        if ($("#name").val() === "" || $("#save").text() === "Edit") {
+            $("#message").prop("disabled", true);
+            $("#name").prop("disabled", false);
+        }
+        else {
+            $("#message").prop("disabled", false);
+            $("#name-group").hide();
+            $("#name-label").text($("#name").val());
+        }
+    })
+
+    $('#message').keypress((event) => {
+        var key = event.which;
+        if (key == 13)  // the enter key code
+        {
+            $("#send").click();
+            return false;
+        }
+    });
 })
 
 socket.on('message', addMessages)
@@ -25,17 +48,28 @@ function getFormattedDateTime() {
     return `Today  ${time}`; 
 }
 
+function isMe(name) {
+    if ($("#name-label").text() === name) {
+        return "me";
+    }
+    return "someone-else";
+}
+
 function addMessages(message) {
     $("#messages").append(`
-        <div> 
-            <span class="username">
-                ${message.name}
-            </span> 
-            (${getFormattedDateTime()})
-        </div>  
-        <ul> 
-            <li>${message.message}
-        </ul>
+        <div class="${isMe(message.name)}">
+            <div class="username"> 
+                <span>
+                    ${message.name}
+                </span> 
+                (${getFormattedDateTime()})
+            </div>  
+            <div class="bubble"> 
+                <ul> 
+                    <li>${message.message}
+                </ul>
+            </div> 
+        </div>
     `)
     $("#messages").animate({scrollTop:$("#messages")[0].scrollHeight}, 1000);
 }

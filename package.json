@@ -4,7 +4,7 @@
   "description": "Sample project to create a chat application",
   "private": true,
   "scripts": {
-      "start": "node server"
+    "start": "node server"
   },
   "dependencies": {
     "express": "4.16.4",
