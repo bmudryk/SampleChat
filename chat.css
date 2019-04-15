@@ -19,8 +19,7 @@ ul {
 }
 
 .container {
-    max-width: 540px;
-    min-width: 445px;
+    width: 412px;
 }
 
 .jumbotron {
