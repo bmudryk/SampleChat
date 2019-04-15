@@ -55,12 +55,13 @@ ul {
 }
 
 .me {
-    margin-left: 40%;
+    margin-left: 150px;
 }
 
 .me .bubble {
     background:#28a745;
     color: #ffffff;
+    width: 90%;
 }
 
 .someone-else .bubble:after {
@@ -89,6 +90,6 @@ ul {
 	border-top-color:#28a745;
 	border-bottom: 0;
     border-right: 0;
-	margin-left: 35px;
+	margin-left: 90px;
 	margin-bottom: -20px;	
 }
