@@ -19,7 +19,7 @@ ul {
 }
 
 .container {
-    width: 412px;
+    width: 400px;
 }
 
 .jumbotron {
@@ -89,6 +89,6 @@ ul {
 	border-top-color:#28a745;
 	border-bottom: 0;
     border-right: 0;
-	margin-left: 90px;
+	margin-left: 45px;
 	margin-bottom: -20px;	
 }
