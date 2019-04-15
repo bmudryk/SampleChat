@@ -75,6 +75,6 @@ function addMessages(message) {
 }
 
 function sendMessage(message) {
-    // $.post('https://samplechatfsa.azurewebsites.net/messages', message)
-    $.post('http://localhost:3000/messages', message)
+    $.post('https://samplechatfsa.azurewebsites.net/messages', message)
+    // $.post('http://localhost:3000/messages', message)
 }
