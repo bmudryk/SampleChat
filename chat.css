@@ -1,6 +1,7 @@
 h5 {
     margin: 20px 0 20px 0;
-    color: #495057
+    color: #053361;
+    font-weight: 700;
 }
 
 ul {
@@ -24,6 +25,20 @@ ul {
 
 .jumbotron {
     padding: 20px 20px 30px 20px;
+    background-color: #f0f1f2;
+}
+
+.btn-success {
+    background-color: #ffd900;
+    border-color: #ffd900;
+    color: #053361;
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+    background-color: #ffc000;
+    border-color: #ffc000;
+    color: #053361;
+    box-shadow: none;
 }
 
 #messages {
@@ -37,7 +52,7 @@ ul {
 
 #name-label {
     font-size: 14px;
-    color: #495057;
+    color:  #545b63;
 }
 
 #name-group {
@@ -46,7 +61,7 @@ ul {
 
 .bubble {
     position: relative;
-    background: #e9ecef;
+    background: #f0f1f2;
     border-radius: 20px;
     margin-bottom: 20px;
     width: 60%;
@@ -57,7 +72,7 @@ ul {
 }
 
 .me .bubble {
-    background:#28a745;
+    background:#004487;
     color: #ffffff;
     width: 90%;
 }
@@ -70,7 +85,7 @@ ul {
 	width: 0;
 	height: 0;
 	border: 15px solid transparent;
-	border-top-color: #e9ecef;
+	border-top-color: #f0f1f2;
 	border-bottom: 0;
     border-left: 0;
 	margin-left: -35%;
@@ -85,7 +100,7 @@ ul {
 	width: 0;
 	height: 0;
 	border: 15px solid transparent;
-	border-top-color:#28a745;
+	border-top-color:#004487;
 	border-bottom: 0;
     border-right: 0;
 	margin-left: 45px;
