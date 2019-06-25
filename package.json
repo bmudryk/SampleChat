@@ -1,7 +1,7 @@
 {
-  "name": "chat",
+  "name": "FullSteamAheadChat",
   "version": "1.0.0",
-  "description": "Sample project to create a chat application",
+  "description": "A simple NodeJs chat application to help students learn some basic programming concepts.",
   "private": true,
   "scripts": {
     "start": "node server"
