@@ -42,7 +42,7 @@ npm run start
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+<https://code.visualstudio.com/tutorials/app-service-extension/getting-started>
 
 ## Enhancement Ideas
 

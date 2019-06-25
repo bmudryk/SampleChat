@@ -75,6 +75,6 @@ function addMessages(message) {
 }
 
 function sendMessage(message) {
-    // $.post('https://yourwebsite.azurewebsites.net/messages', message)
-    $.post('http://localhost:3000/messages', message)
+    $.post('https://fullsteamaheadchat.azurewebsites.net/messages', message)
+    // $.post('http://localhost:3000/messages', message)
 }
